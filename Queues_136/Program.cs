@@ -21,7 +21,11 @@ namespace Queues_136
         public void insert(int element)
         {
             /*this statement check for the overflow  conditions. */
-            if((FRONT == 0 && REAR == max ))
+            if((FRONT == 0 && REAR == max -1 ) || (FRONT == REAR +1))
+            {
+                Console.WriteLine("\nQueue overflow\n");
+                return;
+            }
         }
 
         static void Main(string[] args)
