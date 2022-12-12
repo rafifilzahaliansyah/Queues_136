@@ -144,7 +144,13 @@ namespace Queues_136
                             {
                                 queue.remove();
                             }
-                            break
+                            break;
+                        case '3':
+                            {
+                                queue.display();
+                            }
+                            break;
+
 
                     }
                 }
