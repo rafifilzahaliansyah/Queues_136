@@ -94,6 +94,15 @@ namespace Queues_136
                 }
                 Console.WriteLine();
             }
+            else
+            {
+                /* Traverses the queue till the last position of the array. */
+                while(FRONT_position <=max -1)
+                {
+                    Console.Write(queu_array[FRONT_position] + " ");
+                    FRONT_position++;
+                }
+            }
         }
 
         static void Main(string[] args)
