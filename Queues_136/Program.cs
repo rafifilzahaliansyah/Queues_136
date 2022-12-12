@@ -43,6 +43,17 @@ namespace Queues_136
                     /* if REAR is not at the last position , then its value is incremented by one */
                     REAR = REAR + 1;
             }
+            /* once the position of REAR is determined, the element os added at its proper place. */
+            queue_array[REAR] = element;
+        }
+        public void remove()
+        {
+            /* checks wheather the queue is empty. */
+            if (FRONT == -1)
+            {
+                Console.WriteLine("Queue Underflow\n");
+                return;
+            }
         }
 
         static void Main(string[] args)
