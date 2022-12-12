@@ -44,7 +44,7 @@ namespace Queues_136
                     REAR = REAR + 1;
             }
             /* once the position of REAR is determined, the element os added at its proper place. */
-            queue_array[REAR] = element;
+            queu_array[REAR] = element;
         }
         public void remove()
         {
@@ -53,6 +53,24 @@ namespace Queues_136
             {
                 Console.WriteLine("Queue Underflow\n");
                 return;
+            }
+            Console.WriteLine("\nThe Element deleted from the queue is : " + queu_array[FRONT]
+                + "\n");
+            /*check if the queue has one element. */
+            if (FRONT == REAR)
+            {
+                FRONT = -1;
+                REAR = -1;
+            }
+            else
+            {
+                /* if the elements to be deleted is at the last position of the array, then the value
+                 * of FRONT is set to 0 1.e to the first elements of the array. */
+                if (FRONT == max - 1)
+                    FRONT = 0;
+                else
+                    /* FRONT is incremented by one if it is not the first element of array. */
+                    FRONT = FRONT + 1;
             }
         }
 
