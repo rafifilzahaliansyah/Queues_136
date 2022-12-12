@@ -102,11 +102,40 @@ namespace Queues_136
                     Console.Write(queu_array[FRONT_position] + " ");
                     FRONT_position++;
                 }
+                /*set the front position to the first element of the array. */
+                FRONT_position = 0;
+                /* Traverse the array till the last elements present in the queue. */
+                while(FRONT_position <= REAR_position)
+                {
+                    Console.Write(queu_array[FRONT_position] + " ");
+                    FRONT_position++;
+                }
+                Console.WriteLine();
             }
         }
 
         static void Main(string[] args)
         {
+            Queue queue = new Queue();
+            char ch;
+            while(true)
+            {
+                try
+                {
+                    Console.WriteLine("Menu");
+                    Console.WriteLine(" 1. Implement insert operation ");
+                    Console.WriteLine(" 2. Implement delete operation");
+                    Console.WriteLine(" 3. Display Value ");
+                    Console.WriteLine(" 4. Exit ");
+                    Console.Write("\nEnter Your choice (1-4) :  ");
+                    ch = Convert.ToChar(Console.Read());
+                    Console.WriteLine();
+                    switch(ch)
+                    {
+
+                    }
+                }
+            }
         }
     }
 }
