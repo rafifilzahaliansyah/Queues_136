@@ -116,7 +116,7 @@ namespace Queues_136
 
         static void Main(string[] args)
         {
-            Queue queue = new Queue();
+            Program queue = new Program();
             char ch;
             while(true)
             {
@@ -132,7 +132,15 @@ namespace Queues_136
                     Console.WriteLine();
                     switch(ch)
                     {
-
+                        case '1':
+                            {
+                                Console.Write("Enter a number : ");
+                                int num = Convert.ToInt32(System.Console.ReadLine());
+                                Console.WriteLine();
+                                queue.insert(num);
+                            }
+                            break;
+                           
                     }
                 }
             }
