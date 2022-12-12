@@ -73,6 +73,16 @@ namespace Queues_136
                     FRONT = FRONT + 1;
             }
         }
+        public void display()
+        {
+            int FRONT_position = FRONT;
+            int REAR_position = REAR;
+            /* Checks if the queue is empty. */
+            if (FRONT == -1)
+            {
+
+            }
+        }
 
         static void Main(string[] args)
         {
