@@ -150,9 +150,18 @@ namespace Queues_136
                                 queue.display();
                             }
                             break;
-
-
+                        case '4':
+                            return;
+                        default:
+                            {
+                                Console.WriteLine("Invalid Option !!");
+                            }
+                            break;
                     }
+                }
+                catch(Exception e)
+                {
+                    Console.WriteLine("Check for the values entered.");
                 }
             }
         }
